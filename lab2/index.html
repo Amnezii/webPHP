@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload\Text Logging</title>
+</head>
+<body>
+<h3>Завантажити файл</h3>
+<form action="process.php" method="post" enctype="multipart/form-data">
+    <label for="file">Виберіть файл:</label>
+    <input type="file" name="file" id="file" accept=".jpg, .jpeg, .png">
+    <input type="submit" value="Завантажити">
+</form>
+
+<h3>Записати текст у файл</h3>
+<form action="text.php" method="post">
+    <label for="text">Введіть текст:</label>
+    <textarea name="text" id="text" rows="1" cols="50"></textarea>
+    <input type="submit" value="Записати">
+</form>
+
+<h3>Список завантажених файлів</h3>
+<a href="list.php">Переглянути список файлів</a>
+</body>
+</html>
